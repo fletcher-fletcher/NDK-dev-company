@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#141b17] text-gray-300 mt-20">
+    <footer className="bg-black text-gray-300 mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
@@ -9,7 +9,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-semibold text-white mb-3">Контакты</h4>
-            <p className="text-sm">info@ndc.absgroup.ru</p>
+            <p className="text-sm">dk@info.ru</p>
           </div>
           <div>
             <h4 className="font-semibold text-white mb-3">Юридический адрес</h4>
