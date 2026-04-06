@@ -8,7 +8,6 @@ const servicesData = [
   {
     id: 1,
     category: 'technical',
-    icon: '🏗️',
     title: 'Технический заказчик',
     fullDescription: 'Полный цикл строительства: от подготовки площадки до ввода в эксплуатацию. Включает координацию всех участников строительного процесса, контроль сроков и бюджетов.',
     details: [
@@ -22,7 +21,6 @@ const servicesData = [
   {
     id: 2,
     category: 'documentation',
-    icon: '📑',
     title: 'Исходно-разрешительная документация',
     fullDescription: 'Оформление полного пакета документов для строительства жилых и коммерческих объектов. Сопровождение на всех этапах согласования.',
     details: [
@@ -36,7 +34,6 @@ const servicesData = [
   {
     id: 3,
     category: 'design',
-    icon: '📐',
     title: 'Контроль проектирования',
     fullDescription: 'Экспертиза и надзор за качеством проектных решений на всех этапах. Обеспечение соответствия проектов требованиям и стандартам.',
     details: [
@@ -50,7 +47,6 @@ const servicesData = [
   {
     id: 4,
     category: 'construction',
-    icon: '🔧',
     title: 'Организация СМР',
     fullDescription: 'Управление строительно-монтажными работами, графиками и подрядчиками. Оперативное решение возникающих вопросов.',
     details: [
@@ -64,7 +60,6 @@ const servicesData = [
   {
     id: 5,
     category: 'commissioning',
-    icon: '🏢',
     title: 'Ввод в эксплуатацию и заселение',
     fullDescription: 'Полное сопровождение при сдаче объекта и передаче ключей дольщикам. Подготовка всей необходимой документации.',
     details: [
@@ -78,7 +73,6 @@ const servicesData = [
   {
     id: 6,
     category: 'infrastructure',
-    icon: '🌟',
     title: 'Инфраструктура комфорта',
     fullDescription: 'Обеспечение проектов всей необходимой инфраструктурой для жизни. Создание комфортной городской среды.',
     details: [
@@ -117,7 +111,7 @@ export default function Services() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="max-w-3xl"
+            className="max-w-3xl mx-auto text-center"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Наши услуги</h1>
             <p className="text-lg opacity-90">
