@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -24,9 +25,9 @@ export default function Home() {
                 Все проекты НДК отвечают высоким требованиям современного жилищного строительства
                 и полностью обеспечены необходимой инфраструктурой.
               </p>
-              <button className="btn-primary">
+              <Link href="/projects" className="btn-primary inline-block">
                 Наши проекты
-              </button>
+              </Link>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -112,8 +113,7 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: 'Жилой комплекс «Абсолют Парк»', type: 'Бизнес-класс, Москва', img: '/images/project-absolut-park.jpg'
- },
+              { title: 'Жилой комплекс «Абсолют Парк»', type: 'Бизнес-класс, Москва', img: '/images/project-absolut-park.jpg' },
               { title: 'Клубный дом «Резиденция»', type: 'Премиум-класс, Хамовники', img: '/images/project-residence.jpg' },
               { title: 'Бизнес-центр «Абсолют Тауэр»', type: 'Класс А+, Москва-Сити', img: '/images/project-tower.jpg' }
             ].map((project, idx) => (
@@ -124,7 +124,8 @@ export default function Home() {
                 transition={{ delay: idx * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -8 }}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                onClick={() => window.location.href = '/projects'}
               >
                 <img 
                   src={project.img} 

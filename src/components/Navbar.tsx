@@ -52,9 +52,9 @@ export default function Navbar() {
           ))}
         </div>
 
-        <button className="hidden md:inline-block bg-[#1e3c2c] text-white font-semibold py-2 px-6 rounded-full text-sm hover:bg-[#2d6a4a] transition">
+        <Link href="/contacts" className="hidden md:inline-block bg-[#1e3c2c] text-white font-semibold py-2 px-6 rounded-full text-sm hover:bg-[#2d6a4a] transition">
           Связаться
-        </button>
+        </Link>
 
         <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -77,9 +77,13 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <button className="w-full bg-[#1e3c2c] text-white font-semibold py-3 rounded-full mt-3 hover:bg-[#2d6a4a] transition">
+          <Link 
+            href="/contacts" 
+            className="w-full bg-[#1e3c2c] text-white font-semibold py-3 rounded-full mt-3 hover:bg-[#2d6a4a] transition block text-center"
+            onClick={() => setMobileMenuOpen(false)}
+          >
             Связаться
-          </button>
+          </Link>
         </div>
       )}
     </nav>
