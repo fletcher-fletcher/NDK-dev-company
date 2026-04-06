@@ -13,12 +13,12 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-semibold text-white mb-3">Юридический адрес</h4>
-            <p className="text-sm">125167, г. Москва, Ленинградский пр-кт, д. 47, стр. 1</p>
+            <p className="text-sm">108811, г. Москва, вн. тер. г. п. Московский, Киевское ш. 22-й км (п. Московский), двлд. 4, стр. 5</p>
           </div>
           <div>
             <h4 className="font-semibold text-white mb-3">Реквизиты</h4>
-            <p className="text-sm">ИНН 7714949480 / КПП 771401001</p>
-            <p className="text-sm">ОГРН 1147746463942</p>
+            <p className="text-sm">ИНН 7751060447 / КПП 775101001</p>
+            <p className="text-sm">ОГРН 1177746835200</p>
           </div>
         </div>
         <div className="border-t border-gray-800 pt-6 text-center text-xs">
