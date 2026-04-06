@@ -28,11 +28,15 @@ export default function Navbar() {
       scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-white py-5'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <Link href="/" className="group">
-          <h1 className="text-2xl font-extrabold bg-gradient-to-r from-[#1e3c2c] to-[#2d6a4a] bg-clip-text text-transparent">
-            НДК
-          </h1>
-          <p className="text-xs text-gray-500 hidden sm:block">Национальная девелоперская компания</p>
+        <Link href="/" className="group flex items-center">
+          <img 
+            src="/images/ndc-logo.svg" 
+            alt="НДК - Национальная девелоперская компания" 
+            className="h-12 w-auto"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+            }}
+          />
         </Link>
 
         <div className="hidden md:flex gap-8">
