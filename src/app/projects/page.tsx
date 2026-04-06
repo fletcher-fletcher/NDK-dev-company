@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 
 const projectsData = [
   {
@@ -258,10 +259,9 @@ export default function Projects() {
                 )}
                 
                 <div className="flex gap-4 mt-8">
-                  <button className="btn-primary flex-1 text-center">Получить консультацию</button>
-                  <button className="px-6 py-3 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition">
-                    Скачать презентацию
-                  </button>
+                  <Link href="/contacts" className="btn-primary flex-1 text-center">
+                    Получить консультацию
+                  </Link>
                 </div>
               </div>
             </motion.div>
