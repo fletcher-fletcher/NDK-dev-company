@@ -86,13 +86,13 @@ const servicesData = [
 ];
 
 const categories = [
-  { id: 'all', label: 'Все услуги', icon: '🎯' },
-  { id: 'technical', label: 'Технический заказчик', icon: '🏗️' },
-  { id: 'documentation', label: 'Документация', icon: '📑' },
-  { id: 'design', label: 'Проектирование', icon: '📐' },
-  { id: 'construction', label: 'Строительство', icon: '🔧' },
-  { id: 'commissioning', label: 'Ввод в эксплуатацию', icon: '🏢' },
-  { id: 'infrastructure', label: 'Инфраструктура', icon: '🌟' }
+  { id: 'all', label: 'Все услуги' },
+  { id: 'technical', label: 'Технический заказчик' },
+  { id: 'documentation', label: 'Документация' },
+  { id: 'design', label: 'Проектирование' },
+  { id: 'construction', label: 'Строительство' },
+  { id: 'commissioning', label: 'Ввод в эксплуатацию' },
+  { id: 'infrastructure', label: 'Инфраструктура' }
 ];
 
 export default function Services() {
@@ -130,14 +130,13 @@ export default function Services() {
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`px-5 py-2 rounded-full transition-all duration-300 flex items-center gap-2 ${
+                className={`px-5 py-2 rounded-full transition-all duration-300 font-medium ${
                   activeCategory === cat.id
                     ? 'bg-primary text-white shadow-lg'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
-                <span>{cat.icon}</span>
-                <span className="text-sm font-medium">{cat.label}</span>
+                {cat.label}
               </button>
             ))}
           </div>
@@ -172,9 +171,6 @@ export default function Services() {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                    <div className="absolute bottom-4 left-4 text-white text-4xl">
-                      {service.icon}
-                    </div>
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-3">{service.title}</h3>
@@ -226,9 +222,6 @@ export default function Services() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
-                <div className="absolute bottom-4 left-6 text-white text-5xl">
-                  {selectedService.icon}
-                </div>
               </div>
               <div className="p-6">
                 <h2 className="text-2xl font-bold mb-4">{selectedService.title}</h2>
