@@ -19,10 +19,10 @@ export default function Home() {
                 Стратегический партнер ИГ АБСОЛЮТ
               </span>
               <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-dark">
-                Национальная девелоперская компания
+                Девелоперская компания
               </h1>
               <p className="text-lg text-gray-600 mb-8">
-                Все проекты НДК отвечают высоким требованиям современного жилищного строительства
+                Все проекты ДК отвечают высоким требованиям современного жилищного строительства
                 и полностью обеспечены необходимой инфраструктурой.
               </p>
               <Link href="/projects" className="btn-primary inline-block">

@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'НДК | Национальная девелоперская компания',
+  title: 'ДК | Девелоперская компания',
   description: 'Стратегический партнер Инвестиционной Группы АБСОЛЮТ',
 }
 
