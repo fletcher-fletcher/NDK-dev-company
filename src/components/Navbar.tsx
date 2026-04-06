@@ -30,7 +30,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <Link href="/" className="group flex items-center">
           <img 
-            src="/images/ndc-logo.svg" 
+            src="/images/ndc-logo.png" 
             alt="НДК - Национальная девелоперская компания" 
             className="h-12 w-auto"
             onError={(e) => {
