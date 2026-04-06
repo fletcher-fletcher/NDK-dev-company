@@ -2,11 +2,13 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 
 const servicesData = [
   {
     id: 1,
     category: 'technical',
+    icon: '🏗️',
     title: 'Технический заказчик',
     fullDescription: 'Полный цикл строительства: от подготовки площадки до ввода в эксплуатацию. Включает координацию всех участников строительного процесса, контроль сроков и бюджетов.',
     details: [
@@ -20,6 +22,7 @@ const servicesData = [
   {
     id: 2,
     category: 'documentation',
+    icon: '📑',
     title: 'Исходно-разрешительная документация',
     fullDescription: 'Оформление полного пакета документов для строительства жилых и коммерческих объектов. Сопровождение на всех этапах согласования.',
     details: [
@@ -33,6 +36,7 @@ const servicesData = [
   {
     id: 3,
     category: 'design',
+    icon: '📐',
     title: 'Контроль проектирования',
     fullDescription: 'Экспертиза и надзор за качеством проектных решений на всех этапах. Обеспечение соответствия проектов требованиям и стандартам.',
     details: [
@@ -60,6 +64,7 @@ const servicesData = [
   {
     id: 5,
     category: 'commissioning',
+    icon: '🏢',
     title: 'Ввод в эксплуатацию и заселение',
     fullDescription: 'Полное сопровождение при сдаче объекта и передаче ключей дольщикам. Подготовка всей необходимой документации.',
     details: [
@@ -73,6 +78,7 @@ const servicesData = [
   {
     id: 6,
     category: 'infrastructure',
+    icon: '🌟',
     title: 'Инфраструктура комфорта',
     fullDescription: 'Обеспечение проектов всей необходимой инфраструктурой для жизни. Создание комфортной городской среды.',
     details: [
@@ -238,15 +244,15 @@ export default function Services() {
                   {selectedService.details.map((detail, idx) => (
                     <li key={idx} className="flex items-center gap-2 text-gray-600">
                       <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round"strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       {detail}
                     </li>
                   ))}
                 </ul>
-                <button className="btn-primary w-full text-center">
+                <Link href="/contacts" className="btn-primary w-full text-center block">
                   Получить консультацию
-                </button>
+                </Link>
               </div>
             </motion.div>
           </motion.div>
@@ -260,7 +266,9 @@ export default function Services() {
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             Оставьте заявку, и наш специалист свяжется с вами для обсуждения деталей проекта
           </p>
-          <button className="btn-primary">Связаться с экспертом</button>
+          <Link href="/contacts" className="btn-primary inline-block">
+            Связаться с экспертом
+          </Link>
         </div>
       </section>
     </>
