@@ -24,14 +24,14 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-white py-5'
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 bg-white ${
+      scrolled ? 'shadow-sm' : ''
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <Link href="/" className="group flex items-center">
           <img 
-            src="/images/ndc-logo.png" 
-            alt="НДК - Национальная девелоперская компания" 
+            src="/images/ndc-logo.jpg" 
+            alt="ДК - Девелоперская компания" 
             className="h-12 w-auto"
             onError={(e) => {
               e.currentTarget.style.display = 'none';

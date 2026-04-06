@@ -19,7 +19,7 @@ export default function Contacts() {
               <div className="space-y-4">
                 <div>
                   <p className="text-gray-500 text-sm">Наименование организации</p>
-                  <p className="font-medium">Национальная девелоперская компания</p>
+                  <p className="font-medium">Девелоперская компания</p>
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm">Юридический адрес</p>
@@ -35,7 +35,7 @@ export default function Contacts() {
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm">E-mail</p>
-                  <p className="font-medium text-primary">info@ndc.absgroup.ru</p>
+                  <p className="font-medium text-primary">dk@info.ru</p>
                 </div>
               </div>
             </div>

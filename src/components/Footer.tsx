@@ -4,7 +4,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-white font-bold text-xl mb-4">НДК</h3>
+            <div className="mb-4">
+              <img 
+                src="/images/ndc-logo-bot.png" 
+                alt="НДК - Национальная девелоперская компания" 
+                className="h-12 w-auto"
+              />
+            </div>
             <p className="text-sm">Стратегический партнер Инвестиционной Группы АБСОЛЮТ</p>
           </div>
           <div>
