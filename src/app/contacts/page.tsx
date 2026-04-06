@@ -19,19 +19,19 @@ export default function Contacts() {
               <div className="space-y-4">
                 <div>
                   <p className="text-gray-500 text-sm">Наименование организации</p>
-                  <p className="font-medium">ООО «Национальная девелоперская компания»</p>
+                  <p className="font-medium">Национальная девелоперская компания</p>
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm">Юридический адрес</p>
-                  <p className="font-medium">108811, г. Москва, вн. тер. г. п. Московский, Киевское ш. 22-й км (п. Московский), двлд. 4, стр. 5</p>
+                  <p className="font-medium">125167, г. Москва, Ленинградский пр-кт, д. 47, стр. 1</p>
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm">ИНН / КПП</p>
-                  <p className="font-medium">7751060447 / 775101001</p>
+                  <p className="font-medium">7714949480 / 771401001</p>
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm">ОГРН</p>
-                  <p className="font-medium">1177746835200</p>
+                  <p className="font-medium">1147746463942</p>
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm">E-mail</p>
