@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 pt-6 text-center text-xs">
-          <p>© 2025 Национальная девелоперская компания. Все права защищены.</p>
+          <p>© 2026 Национальная девелоперская компания. Все права защищены.</p>
         </div>
       </div>
     </footer>
