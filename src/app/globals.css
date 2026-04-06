@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-[#141b17] antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block bg-[#1e3c2c] text-white font-semibold py-3 px-8 rounded-full 
+           transition-all duration-300 hover:bg-[#2d6a4a] hover:shadow-lg 
+           hover:-translate-y-0.5;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-[#141b17] mb-4;
+  }
+}
